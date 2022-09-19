@@ -32116,8 +32116,6 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <part name="SV3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2" value="Testport II"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC/2" device=""/>
@@ -32493,12 +32491,6 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <instance part="SUPPLY9" gate="G$1" x="147.32" y="243.84" smashed="yes">
 <attribute name="VALUE" x="147.32" y="248.92" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="170.18" y="99.06" smashed="yes">
-<attribute name="VALUE" x="170.18" y="104.14" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY15" gate="G$1" x="170.18" y="48.26" smashed="yes">
-<attribute name="VALUE" x="170.18" y="53.34" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="SUPPLY16" gate="GND" x="259.08" y="48.26" smashed="yes"/>
 <instance part="SUPPLY17" gate="GND" x="292.1" y="48.26" smashed="yes"/>
 <instance part="P+1" gate="G$1" x="205.74" y="170.18" smashed="yes">
@@ -32825,22 +32817,6 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <wire x1="53.34" y1="233.68" x2="81.28" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="241.3" x2="53.34" y2="233.68" width="0.1524" layer="91"/>
 <junction x="53.34" y="233.68"/>
-</segment>
-<segment>
-<pinref part="SUPPLY14" gate="G$1" pin="VCC"/>
-<wire x1="170.18" y1="96.52" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="RN4" gate="E" pin="1"/>
-<wire x1="172.72" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY15" gate="G$1" pin="VCC"/>
-<wire x1="170.18" y1="45.72" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="RN4" gate="C" pin="1"/>
-<wire x1="170.18" y1="43.18" x2="170.18" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
-<junction x="170.18" y="43.18"/>
-<pinref part="RN4" gate="G" pin="1"/>
-<wire x1="172.72" y1="30.48" x2="170.18" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="5V"/>
@@ -33303,6 +33279,22 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <wire x1="139.7" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="121.92" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
 <label x="137.16" y="124.46" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="96.52" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="E" pin="1"/>
+<wire x1="172.72" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<label x="170.18" y="96.52" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="45.72" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="C" pin="1"/>
+<wire x1="170.18" y1="43.18" x2="170.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<junction x="170.18" y="43.18"/>
+<pinref part="RN4" gate="G" pin="1"/>
+<wire x1="172.72" y1="30.48" x2="170.18" y2="30.48" width="0.1524" layer="91"/>
+<label x="170.18" y="45.72" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="LED1" class="0">
